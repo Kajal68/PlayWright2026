@@ -27,25 +27,25 @@ test(`Client the App login ${data.productName}`, async ({page,}) => {
 });
 
 }
-customtest.only('Test Data fixture test', async ({page, testDataForOrder}) => {
-   //js file- Login js, DashboardPage
-   const pomanager = new POManager(page);
+// customtest('Test Data fixture test', async ({page, testDataForOrder}) => {
+//    //js file- Login js, DashboardPage
+//    const pomanager = new POManager(page);
 
-   const products = page.locator(".card-body") ;
-   const login = pomanager.getLoginPage();
-   await login.goTo();
-   await login.validLogin(testDataForOrder.username,testDataForOrder.password);
+//    const products = page.locator(".card-body") ;
+//    const login = pomanager.getLoginPage();
+//    await login.goTo();
+//    await login.validLogin(testDataForOrder.username,testDataForOrder.password);
 
-   const dashboard = pomanager.getDashboardPage();
-   await dashboard.waitforele();
-   await dashboard.pickItem();
-   await dashboard.addToCart();
+//    const dashboard = pomanager.getDashboardPage();
+//    await dashboard.waitforele();
+//    await dashboard.pickItem();
+//    await dashboard.addToCart();
    
-   const checkout =pomanager.getCheckoutPage();
-   await checkout.productList();
-   await checkout.checkoutDetails("ind");
+//    const checkout =pomanager.getCheckoutPage();
+//    await checkout.productList();
+//    await checkout.checkoutDetails("ind");
 
   
  
-});
+//});
 

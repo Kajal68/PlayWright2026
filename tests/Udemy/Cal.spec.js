@@ -30,7 +30,7 @@ test("Calendar validations",async({page})=>
  
 });
 
-test.only("Visual Calendar validations",async({page})=>
+test("Visual Calendar validations",async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 
