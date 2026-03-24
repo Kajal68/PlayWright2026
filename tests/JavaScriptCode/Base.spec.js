@@ -1,4 +1,4 @@
-const Person=require('./Day8.spec');
+const Person=require('./Day8.js');
 
 
 let p1 = new Person("Rose", "Doe");

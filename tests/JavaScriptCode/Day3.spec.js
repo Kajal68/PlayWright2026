@@ -37,7 +37,7 @@ marks2.includes(80); //returns true if the element is found in the array, otherw
 marks2.slice(1, 4); //returns a new array containing the elements from the start index to the end index (exclusive), we can also pass an argument
 //console.log(marks2.slice(1, 4));
 
-submarks = marks2.slice(1, 4); //returns a new array containing the elements from the start index to the end index (exclusive), we can also pass an argument
+let submarks = marks2.slice(1, 4); //returns a new array containing the elements from the start index to the end index (exclusive), we can also pass an argument
 //console.log(submarks);
 
 for(let i = 0;i<marks.length;i++){

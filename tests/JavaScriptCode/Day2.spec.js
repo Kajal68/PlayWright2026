@@ -38,7 +38,7 @@ for(let j=0; j<5; j++){
    // console.log(j);
 }
 
-for(k=0;k<=10;k++){
+for(let k=0;k<=10;k++){
 
     // if(k%2==0){
     //  //   console.log(k);

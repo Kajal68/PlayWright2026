@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
-const {POManager} = require('../PageObjects/POManager.spec');
+const {POManager} = require('../PageObjects/POManager.js');
 //json->string>js object
 const dataSet=JSON.parse(JSON.stringify(require('../Utils/LoginPagetestData.json')));
-const {customtest} =require('../Utils/test.base.spec');
+//const {customtest} =require('../Utils/test.base.spec');
 for(const data of dataSet) { //multiple times it will run with filters
 test(`Client the App login ${data.productName}`, async ({page,}) => {
    //js file- Login js, DashboardPage
