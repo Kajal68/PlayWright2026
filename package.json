@@ -1,0 +1,25 @@
+{
+  "name": "restassuredapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test tests/Udemy --grep @Web",
+    "APITests": "npx playwright test tests/TestFiles --grep @API",
+    "cucumberTests":"npx cucumber-js --tags '@Regression' --retry 1 --exit --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "allure-commandline": "^2.38.0",
+    "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.7.0"
+  }
+}
